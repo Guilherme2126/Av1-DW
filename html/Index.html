@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Mensagens</title>
+    <link rel="stylesheet" href="../css/Style.css">
+    <meta name="author" content="Aluno">
+    <meta name="description" content="Pequena aplicação para enviar e gerenciar mensagens em lista">
+    </head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Envio de Mensagens</h1>
+            <p class="subtitle">Digite texto e adicione cada palavra como item na lista. Edite ou exclua itens individualmente.</p>
+        </header>
+
+        <section class="card">
+            <div class="controls">
+                <label for="mensagem" class="visually-hidden">Mensagem</label>
+                <input id="mensagem" type="text" placeholder="Digite uma mensagem" autocomplete="off">
+                <button id="btnEnviar" type="button" class="btn primary">Adicionar</button>
+            </div>
+
+            <ul id="Lista" class="message-list" aria-live="polite"></ul>
+        </section>
+
+        <footer class="footer">Feito para demonstração — Interface simples</footer>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

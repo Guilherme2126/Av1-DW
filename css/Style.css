@@ -1,0 +1,123 @@
+
+:root{
+	--bg:#f5f7fb;
+	--card:#ffffff;
+	--muted:#6b7280;
+	--accent:#1565c0;
+	--danger:#d32f2f;
+	--radius:10px;
+	--max-width:680px;
+	--gap:16px;
+}
+
+*{box-sizing:border-box}
+body{
+	margin:0;
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	background:linear-gradient(180deg,var(--bg),#eef3fb);
+	color:#111827;
+	-webkit-font-smoothing:antialiased;
+}
+
+.container{
+	max-width:var(--max-width);
+	margin:48px auto;
+	padding:24px;
+}
+
+.card{
+	background:var(--card);
+	border-radius:var(--radius);
+	box-shadow:0 6px 18px rgba(15,23,42,0.08);
+	padding:20px;
+}
+
+.header h1{
+	margin:0 0 8px 0;
+	font-size:1.6rem;
+	letter-spacing:0.2px;
+}
+.subtitle{
+	margin:0;
+	color:var(--muted);
+	font-size:0.95rem;
+}
+
+.controls{
+	display:flex;
+	gap:10px;
+	margin-bottom:14px;
+}
+
+input#mensagem{
+	flex:1 1 auto;
+	padding:10px 12px;
+	border-radius:8px;
+	border:1px solid #d1d5db;
+	font-size:1rem;
+}
+
+.btn{
+	padding:10px 14px;
+	border-radius:8px;
+	border:0;
+	cursor:pointer;
+	font-weight:600;
+}
+.btn.primary{
+	background:var(--accent);
+	color:white;
+}
+
+.message-list{
+	list-style:none;
+	margin:0;
+	padding:0;
+	display:flex;
+	flex-direction:column;
+	gap:8px;
+}
+
+.message-list li{
+	display:flex;
+	align-items:center;
+	gap:10px;
+	padding:10px 12px;
+	border-radius:8px;
+	border:1px solid #e6edf8;
+	background:linear-gradient(0deg, #ffffff, #fbfdff);
+}
+
+.message-list .text{
+	flex:1 1 auto;
+}
+
+.message-list button{
+	padding:6px 8px;
+	border-radius:6px;
+	border:1px solid transparent;
+	background:transparent;
+	font-weight:600;
+	cursor:pointer;
+}
+.message-list button.edit{
+	color:var(--accent);
+}
+.message-list button.delete{
+	color:var(--danger);
+}
+
+.footer{
+	margin-top:18px;
+	color:var(--muted);
+	font-size:0.9rem;
+	text-align:center;
+}
+
+@media (max-width:520px){
+	.container{padding:16px;margin:20px}
+	.controls{flex-direction:column}
+	.controls .btn{width:100%}
+}
+
+.visually-hidden{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px,1px,1px,1px);white-space:nowrap}
