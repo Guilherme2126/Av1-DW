@@ -41,7 +41,7 @@ Av1-DW/
 
 ## 👨‍💻 Autor
 
-Aluno
+Guilherme de Araujo 2BTI
 
 ## 📄 Licença
 
